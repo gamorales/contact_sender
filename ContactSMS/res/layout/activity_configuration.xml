@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            android:background="@drawable/myshape">
+<LinearLayout 
+    android:id="@+id/configLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+         
+    <com.google.ads.AdView 
+            android:id="@+id/Publicidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adUnitId="a150805c910a70a"
+            ads:adSize="BANNER" />
+    
+    <CheckBox
+        android:id="@+id/chkSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senderSMS"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/chkMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senderMail"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correo"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        
+            <requestFocus />            
+        </TextView>                
+
+        <EditText
+            android:id="@+id/txtEMailEnvios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salir" />
+    </LinearLayout>
+    
+</LinearLayout>
+</ScrollView>

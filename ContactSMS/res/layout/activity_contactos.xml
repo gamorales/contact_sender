@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/configLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/myshape" >  
+         
+    <com.google.ads.AdView 
+            android:id="@+id/Publicidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adUnitId="a150805c910a70a"
+            ads:adSize="BANNER"             
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" />
+    
+    <TextView 
+        android:id="@+id/lblMensaje"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20px"
+        android:text="@string/consultados"
+        android:textColor="#FFFFFFFF" />
+
+    <ListView 
+        android:id="@+id/LstOpciones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
